@@ -32,4 +32,4 @@ export async function getStaticProps() {
   }; 
 }
 
-export default HomePage;
+export default HomePage;s
