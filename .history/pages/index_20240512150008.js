@@ -1,7 +1,5 @@
 import MeetupList from '../components/meetups/MeetupList';
 import { MongoClient } from 'mongodb';
-import {Fragment} from 'react';
-import Head from 'next/head';
 
 // const DUMMY_MEETUPS = [
 //   {
@@ -22,20 +20,9 @@ import Head from 'next/head';
 //   },
 // ];
 
- function HomePage(props) {
-  return (
-    <Fragment>
-      <Head>
-        <title>React Meetups</title>
-        <meta
-          name='description'
-          content='Browse a huge list of highly active React meetups!'
-        />
-      </Head>
-      <MeetupList meetups={props.meetups} />;
-    </Fragment>
-  );
- }
+// function HomePage(props) {
+//   return <MeetupList meetups={props.meetups} />;
+// }
 //this function will be rendered in serverside not during deployment for any incomes 
 
 // export async function getServerSideProps(context) {
@@ -50,11 +37,6 @@ import Head from 'next/head';
 //     }
 //   };
 // }
-
-
-
-
-
 // if you don't have data that is updated every second this alternative would be better
 export async function getStaticProps() {
   // fetch data from an API

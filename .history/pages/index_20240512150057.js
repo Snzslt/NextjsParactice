@@ -1,7 +1,5 @@
 import MeetupList from '../components/meetups/MeetupList';
 import { MongoClient } from 'mongodb';
-import {Fragment} from 'react';
-import Head from 'next/head';
 
 // const DUMMY_MEETUPS = [
 //   {
