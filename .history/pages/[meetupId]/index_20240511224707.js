@@ -30,7 +30,7 @@ function MeetupDetails() {
          },
        ],
      };
-   }
+//   }
   //because the data in details wont change that much getstatic props would be a goof way to fetch data
   export async function getStaticProps(context) {
     // fetch data for a single meetup

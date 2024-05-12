@@ -10,27 +10,25 @@ function MeetupDetails() {
     />
   );
 }
-// this function is necessary if you used getStaticProps if should now where it should update data and in this case that 
-//would be all the items in dummy data
+// this function is necessary if you used getStaticProps
 
- export async function getStaticPaths() {
-     return {
-    // this line tells that the fetch update would be only for some paths
-       fallback: false,
-       paths: [
-         {
-           params: {
-             meetupId: 'm1',
-           },
-         },
-         {
-           params: {
-             meetupId: 'm2',
-           },
-         },
-       ],
-     };
-   }
+export async function getStaticPaths() {
+    return {
+      fallback: false,
+      paths: [
+        {
+          params: {
+            meetupId: 'm1',
+          },
+        },
+        {
+          params: {
+            meetupId: 'm2',
+          },
+        },
+      ],
+    };
+  }
   //because the data in details wont change that much getstatic props would be a goof way to fetch data
   export async function getStaticProps(context) {
     // fetch data for a single meetup
