@@ -22,15 +22,13 @@ const DUMMY_MEETUPS = [
 function HomePage(props) {
   return <MeetupList meetups={props.meetups} />;
 }
-//if the data does not change frequently thid is a good alternative 
+//if the data does not change 
 export async function getStaticProps() {
   // fetch data from an API
   return {
     props: {
       meetups: DUMMY_MEETUPS
-    },
-    //your data is not older than 10 second(ocasuanally read the data)
-    revalidate: 10
+    }
   }; 
 }
 

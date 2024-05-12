@@ -29,7 +29,7 @@ export async function getStaticProps() {
     props: {
       meetups: DUMMY_MEETUPS
     },
-    //your data is not older than 10 second(ocasuanally read the data)
+    //your data is not older than 10 second( ocu)
     revalidate: 10
   }; 
 }
