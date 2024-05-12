@@ -36,7 +36,7 @@ function HomePage(props) {
 //     }
 //   };
 // }
-// if you don't have data that is updated every second this alternative would be better
+
 export async function getStaticProps() {
   // fetch data from an API
   return {

@@ -22,7 +22,7 @@ const DUMMY_MEETUPS = [
 function HomePage(props) {
   return <MeetupList meetups={props.meetups} />;
 }
-//this function will be rendered in serverside not during deployment for any incomes 
+//t
 
 // export async function getServerSideProps(context) {
 //   const req = context.req;
@@ -36,14 +36,13 @@ function HomePage(props) {
 //     }
 //   };
 // }
-// if you don't have data that is updated every second this alternative would be better
+
 export async function getStaticProps() {
   // fetch data from an API
   return {
     props: {
       meetups: DUMMY_MEETUPS
     },
-    //update datas every second
     revalidate: 1
   }; 
 }
